@@ -140,18 +140,24 @@ body {
 
 /* Apply to all level 1 headings */
 h1 {
+    font-family: 'Slabby', sans-serif;
+    font-weight: normal;
     font-size: 36px;
     color: #ffffff; /* Set font color to white */
 }
 
 /* Apply to all level 2 headings */
 h2 {
+    font-family: 'Slabby', sans-serif;
+    font-weight: normal;
     font-size: 26px;
     color: #ffffff; /* Set font color to white */
 }
 
 /* Apply to all level 3 headings */
 h3 {
+    font-family: 'Slabby', sans-serif;
+    font-weight: normal;
     font-size: 16px;
     color: #ffffff; /* Set font color to white */
 }
@@ -184,3 +190,9 @@ welcome {
 .big-welcome-sign {
     text-align: center; /* Center text horizontally */
     }
+
+
+.slab {
+    font-family: 'Slabby', sans-serif;    
+    color: #ffffff;
+}
