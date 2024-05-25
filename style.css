@@ -172,10 +172,16 @@ p {
 
 welcome {
     font-size: 80px;
+    font-family: 'Slabby', sans-serif;    
     color: #ffffff; /* Set font color to white */
     font-weight: normal;
-    
-    
+}
+
+welcome-desc {
+    font-size: 40px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    color: #ffffff; /* Set font color to white */
+    font-weight: bold;
 }
 
 .big-welcome-sign {
