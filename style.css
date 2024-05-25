@@ -55,14 +55,14 @@ h2 {
 
 /* Apply to all level 3 headings */
 h3 {
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff; /* Set font color to white */
 }
 
 /* Apply to all paragraphs */
 p {
     font-family: 'Atkinson Hyperlegible', sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     color: #ffffff; /* Set font color to white */
 }
 
