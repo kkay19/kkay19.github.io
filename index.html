@@ -45,13 +45,14 @@ header {
     text-align: center;
     position: relative;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    /* Add sawtooth pattern */
+    background-image: linear-gradient(45deg, transparent 20px, #111b22 20px, #111b22 40px, transparent 40px);
 }
 
 /* Navbar styling */
 nav {
     text-align: center;
     padding: 10px;
-    position: relative; /* Ensure positioning context for absolute positioning */
 }
 
 nav a {
@@ -59,25 +60,6 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
 }
-
-/* Sawtooth wave pattern */
-.sawtooth {
-    position: absolute;
-    top: 100%; /* Position below navbar */
-    left: 0;
-    width: 100%;
-    height: 20px; /* Adjust the height of the sawtooth wave */
-    background: linear-gradient(45deg, #111b22, #111b22 5%, transparent 5%, transparent 10%); /* Adjust the color and size of the sawtooth wave */
-    z-index: 1; /* Ensure it's on top */
-}
-
-/* Hide sawtooth on smaller screens */
-@media (max-width: 768px) {
-    .sawtooth {
-        display: none;
-    }
-}
-
 
         h1 {
             margin: 0;
