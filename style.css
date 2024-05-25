@@ -170,15 +170,3 @@ p {
 
 /* Miscellaneous */
 
-.big-welcome-sign {
-    text-align: center; /* Center text horizontally */
-    font-family: "Slabby", sans-serif;
-    color: #ffffff
-    margin: 0 auto; /* Center the block horizontally */
-    max-width: 800px; /* Set maximum width */
-    padding: 20px; /* Add padding for better readability */
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 80px; /* Optional: Adjust font size */
-    line-height: 1.6; /* Optional: Adjust line height */
-}
-
