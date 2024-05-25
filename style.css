@@ -162,6 +162,7 @@ h3 {
 welcome {
     font-size: 80px;
     color: #ffffff; /* Set font color to white */
+    font-weight: normal;
 }
 
 /* Apply to all paragraphs */
