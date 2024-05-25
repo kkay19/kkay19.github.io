@@ -58,6 +58,11 @@ section {
     margin-bottom: 40px;
 }
 
+#logo {
+    height: 80px;
+    width: auto;
+}
+
 
 /* Apply specific styling to home section */
 #home {
