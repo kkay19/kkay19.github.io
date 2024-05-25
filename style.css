@@ -1,3 +1,64 @@
+/* Background */
+body {
+    /* Set background image */
+    background-image: url('/assets/sitebg.png');
+    /* Set background size */
+    background-size: cover;
+    /* Set background attachment */
+    background-attachment: fixed;
+    /* Set default font family and color */
+    font-family: 'Slabby', sans-serif;
+    color: #ffffff;
+}
+
+/* Apply to the header element */
+header {
+    background-color: #111b22; /* Example header background color */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Apply to the nav element */
+nav {
+    text-align: center;
+}
+
+/* Apply to the nav links */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Apply to the container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Apply to sections */
+section {
+    margin-bottom: 40px;
+}
+
+/* Apply specific styling to home section */
+#home {
+    /* Add specific styling for the home section */
+}
+
+/* Apply specific styling to about section */
+#about {
+    /* Add specific styling for the about section */
+}
+
+/* Apply specific styling to blog section */
+#blog {
+    /* Add specific styling for the blog section */
+}
+
+
 /* Fonts */
 @font-face {
     font-family: 'Slabby';
