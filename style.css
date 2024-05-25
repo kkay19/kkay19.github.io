@@ -45,18 +45,35 @@ section {
 
 /* Apply specific styling to home section */
 #home {
-    /* Add specific styling for the home section */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
+    border-radius: 10px;
+    color: #ffffff;
 }
 
 /* Apply specific styling to about section */
 #about {
-    /* Add specific styling for the about section */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
+    border-radius: 10px;
+    color: #ffffff;
 }
 
 /* Apply specific styling to blog section */
 #blog {
-    /* Add specific styling for the blog section */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
+    border-radius: 10px;
+    color: #ffffff;
 }
+
+.blog-post {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 10px;
+}
+
 
 
 /* Fonts */
