@@ -177,10 +177,9 @@ welcome {
     font-weight: normal;
 }
 
-welcome-desc {
+.welcome-sign-desc {
     font-size: 40px;
     font-family: 'Atkinson Hyperlegible', sans-serif;
-    color: #ffffff; /* Set font color to white */
     font-weight: bold;
 }
 
