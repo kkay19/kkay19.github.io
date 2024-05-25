@@ -158,13 +158,6 @@ h3 {
     color: #ffffff; /* Set font color to white */
 }
 
-/* Apply to all level 3 headings */
-welcome {
-    font-size: 80px;
-    color: #ffffff; /* Set font color to white */
-    font-weight: normal;
-}
-
 /* Apply to all paragraphs */
 p {
     font-family: 'Atkinson Hyperlegible', sans-serif;
@@ -177,3 +170,15 @@ p {
 
 /* Miscellaneous */
 
+welcome {
+    font-size: 80px;
+    color: #ffffff; /* Set font color to white */
+    font-weight: normal;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 20px;
+    
+    
+}
