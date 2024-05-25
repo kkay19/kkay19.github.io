@@ -10,7 +10,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kaykay19</title>
+    <title>kaykay19!</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -24,8 +24,31 @@
             background-color: #111b22;
             color: #ffffff;
             padding: 20px;
-            text-align: center;
+            text-align: center
+            position: relative;
+            overflow: hidden;
         }
+
+/* Triangle wave pattern */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 33.33%, #ffffff 33.33%, #ffffff 66.66%, transparent 66.66%); /* Adjust the angles and colors as needed */
+    z-index: -1; /* Behind the header content */
+}
+
+/* Hide overflow on smaller screens */
+@media (max-width: 768px) {
+    header::before {
+        display: none;
+    }
+}
+
+
         h1 {
             margin: 0;
         }
