@@ -172,7 +172,7 @@ p {
 
 .big-welcome-sign {
     text-align: center; /* Center text horizontally */
-    font-family: 'Slabby', sans-serif;
+    font-family: "Slabby", sans-serif;
     color: #ffffff
     margin: 0 auto; /* Center the block horizontally */
     max-width: 800px; /* Set maximum width */
