@@ -42,7 +42,7 @@ header::after {
     height: 40px; /* Adjust height as needed */
     background: url('/assets/wavepattern.png') repeat-x; /* Ensure the correct path to your image */
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
     left: 0;
 }
 
@@ -64,6 +64,7 @@ section {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
     border-radius: 10px;
+    width: 100%;
     color: #ffffff;
 }
 
@@ -72,6 +73,7 @@ section {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
     border-radius: 10px;
+    width: 100%;
     color: #ffffff;
 }
 
@@ -80,6 +82,7 @@ section {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
     border-radius: 10px;
+    width: 100%;
     color: #ffffff;
 }
 
@@ -87,6 +90,7 @@ section {
     margin-bottom: 20px;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    width: 100%;
     border-radius: 10px;
 }
 
