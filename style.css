@@ -69,7 +69,6 @@ section {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
     border-radius: 10px;
-    width: 100%;
     color: #ffffff;
 }
 
@@ -78,7 +77,6 @@ section {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
     border-radius: 10px;
-    width: 100%;
     color: #ffffff;
 }
 
@@ -87,7 +85,6 @@ section {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
     border-radius: 10px;
-    width: 100%;
     color: #ffffff;
 }
 
@@ -95,7 +92,6 @@ section {
     margin-bottom: 20px;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
-    width: 100%;
     border-radius: 10px;
 }
 
@@ -167,5 +163,22 @@ p {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 14px;
     color: #ffffff; /* Set font color to white */
+}
+
+
+
+
+/* Miscellaneous */
+
+.big-welcome-sign {
+    text-align: center; /* Center text horizontally */
+    font-family: 'Slabby', sans-serif;
+    color: #ffffff
+    margin: 0 auto; /* Center the block horizontally */
+    max-width: 800px; /* Set maximum width */
+    padding: 20px; /* Add padding for better readability */
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 80px; /* Optional: Adjust font size */
+    line-height: 1.6; /* Optional: Adjust line height */
 }
 
