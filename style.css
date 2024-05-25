@@ -15,10 +15,19 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    position: relative;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar styling */
+header .sawtooth {
+    position: absolute;
+    bottom: -20px; /* Adjust this to position the sawtooth pattern */
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: repeating-linear-gradient(45deg, #111b22, #111b22 10px, transparent 10px, transparent 20px);
+}
+
 nav {
     text-align: center;
     padding: 10px;
@@ -46,23 +55,6 @@ section {
     margin-bottom: 40px;
 }
 
-h2 {
-    font-family: 'Slabby', sans-serif;
-    font-size: 26px;
-    color: white;
-}
-
-h3 {
-    font-family: 'Slabby', sans-serif;
-    font-size: 20px;
-    color: white;
-}
-
-p {
-    font-family: 'Atkinson Hyperlegible', sans-serif;
-    font-size: 14px;
-    color: white;
-}
 
 /* Apply specific styling to home section */
 #home {
