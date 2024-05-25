@@ -20,14 +20,15 @@
             background-color: #ffffff;
             color: #000000;
         }
-        header {
-            background-color: #111b22;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center
-            position: relative;
-            overflow: hidden;
-        }
+
+header {
+    background-color: #111b22;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center; /* Add a semicolon here */
+    position: relative;
+    overflow: hidden; /* Move overflow property here */
+}
 
 /* Triangle wave pattern */
 header::before {
@@ -37,8 +38,8 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, transparent 33.33%, #ffffff 33.33%, #ffffff 66.66%, transparent 66.66%); /* Adjust the angles and colors as needed */
-    z-index: -1; /* Behind the header content */
+    background: linear-gradient(45deg, transparent 33.33%, #ffffff 33.33%, #ffffff 66.66%, transparent 66.66%);
+    z-index: -1;
 }
 
 /* Hide overflow on smaller screens */
