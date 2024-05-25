@@ -64,40 +64,6 @@ section {
     width: auto;
 }
 
-
-/* Apply specific styling to home section */
-#home {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
-    border-radius: 10px;
-    color: #ffffff;
-}
-
-/* Apply specific styling to about section */
-#about {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
-    border-radius: 10px;
-    color: #ffffff;
-}
-
-/* Apply specific styling to blog section */
-#blog {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
-    border-radius: 10px;
-    color: #ffffff;
-}
-
-.blog-post {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
-    border-radius: 10px;
-}
-
-
-
 /* Fonts */
 @font-face {
     font-family: 'Slabby';
@@ -166,42 +132,4 @@ p {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 14px;
     color: #ffffff; /* Set font color to white */
-}
-
-/* Post Link Tweaks */
-.blog-post a {
-    color: #ffffff
-    text-decoration: none; /* Remove underline */
-}
-
-/* CSS for visited links (optional) */
-.blog-post a:visited {
-    color: #ffffff
-}
-
-
-
-/* Miscellaneous */
-
-welcome {
-    font-size: 80px;
-    font-family: 'Slabby', sans-serif;    
-    color: #ffffff; /* Set font color to white */
-    font-weight: normal;
-}
-
-.welcome-sign-desc {
-    font-size: 40px;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
-    font-weight: bold;
-}
-
-.big-welcome-sign {
-    text-align: center; /* Center text horizontally */
-    }
-
-
-.slab {
-    font-family: 'Slabby', sans-serif;    
-    color: #ffffff;
 }
