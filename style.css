@@ -35,28 +35,33 @@
 
 /* Specify */
 
+/* Apply to the body element */
+body {
+    font-family: 'Slabby', sans-serif;
+    color: white; /* Set default font color */
+}
 
+/* Apply to all level 1 headings */
 h1 {
-    font-family: 'Slabby', sans-serif;
-    font-size: 36px
-    font-color: white
+    font-size: 36px;
+    color: white; /* Set font color to white */
 }
 
+/* Apply to all level 2 headings */
 h2 {
-    font-family: 'Slabby', sans-serif;
-    font-size: 26px
-    font-color: white
+    font-size: 26px;
+    color: white; /* Set font color to white */
 }
 
+/* Apply to all level 3 headings */
 h3 {
-    font-family: 'Slabby', sans-serif;
-    font-size: 20px
-    font-color: white
+    font-size: 20px;
+    color: white; /* Set font color to white */
 }
 
-
+/* Apply to all paragraphs */
 p {
     font-family: 'Atkinson Hyperlegible', sans-serif;
-    font-size: 10px
-    font-color: white
+    font-size: 10px;
+    color: white; /* Set font color to white */
 }
