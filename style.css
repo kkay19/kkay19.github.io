@@ -64,7 +64,6 @@ section {
     width: auto;
 }
 
-
 .footer {
     position: relative;
     background-color: #111b22; /* Background color for the footer */
@@ -167,14 +166,12 @@ section {
 body {
     color: #ffffff; /* Set default font color */
 }
-
 /* Apply to all level BEEG headings */
 h0 {
     font-weight: normal;
     font-size: 66px;
     color: #ffffff; /* Set font color to white */
 }
-
 
 /* Apply to all level 1 headings */
 h1 {
@@ -215,6 +212,7 @@ p {
     color: #ffffff
 }
 
+
 /* Cat Pics */
 
 .kaykay1 {
@@ -223,6 +221,7 @@ p {
     left: -40px;
     top: 620px
 }
+
 
 
 /* Miscellaneous */
