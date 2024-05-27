@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.banner-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 250px;
+}
+
+.banner-image img {
+    width: 100%;
+    max-width: 1500px; /* Adjust this value as needed */
+    height: auto;
+    display: block;
+}
+
+.post-title {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.post-date {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.blog-content {
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+.blackground {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+        .line {
+            height: 2px;
+            background: #ffffff;
+            margin: 10px 0;
+        }
+
+/* General styles */
+body {
+    background-color: #475f7b;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Slabby', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #111b22;
+    color: white;
+    padding: 20px;
+    font-family: 'Slabby', sans-serif;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+url a:hover {
+    text-decoration: underline;
+}
+
+/* Wave pattern */
+header::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 40px; /* Adjust height as needed */
+    background: url('/assets/wavepattern.png') repeat-x; /* Ensure the correct path to your image */
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 40px;
+}
+
+#logo {
+    height: 80px;
+    width: auto;
+}
+
+
+/* Apply specific styling to home section */
+#home {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.home-text {
+    line-height: 1.2;
+}
+
+/* Apply specific styling to about section */
+#about {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+#back-to-top {
+    display: none; /* Hide the button by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#back-to-top img {
+    width: 40px; /* Adjust the width of the image as needed */
+    height: 40px; /* Adjust the height of the image as needed */
+    border-radius: 50%; /* Optional: for circular images */
+}
+
+#back-to-top:hover img {
+    <img src="/assets/backtotop2.svg" alt="Back to Top">
+}
+
+.container {
+    min-height: 100vh; /* Making the container at least as tall as the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1; /* Make the content area flexible to take up remaining space */
+}
+
+.footer {
+    position: relative;
+    background-color: #111b22; /* Background color for the footer */
+    color: #ffffff; /* Text color for the footer */
+    padding: 20px; /* Padding around the content inside the footer */
+    text-align: center; /* Aligning text to the center */
+    max-width: 1309px; /* Setting a maximum width for the footer */
+    width: 100%; /* Making it span the entire width of the parent container */
+    margin: 0; /* Centering the footer horizontally */
+    margin-top: 10%;
+}
+
+.footer-pattern {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/wavepattern.png') repeat-x;
+    pointer-events: none; /* Ensure the image doesn't interfere with footer content */
+    opacity: 1; /* Adjust the opacity as needed */
+    transform: rotate(180deg);
+}
+
+.content:last-child {
+    margin-bottom: 0; /* Prevent margin collapsing with the footer */
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Slabby';
+    src: url('/fonts/Slabby.woff2') format('woff2'),
+    font-weight: normal;
+    font-style: normal;
+    font-family: sans-serif;
+}
+
+
+.atkinson-hyperlegible-regular {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-regular-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.atkinson-hyperlegible-bold-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* Specify */
+
+/* Apply to the body element */
+body {
+    color: #ffffff; /* Set default font color */
+}
+
+/* Apply to all level BEEG headings */
+h0 {
+    font-family: 'Slabby', sans-serif;
+    font-weight: normal;
+    font-size: 66px;
+}
+
+/* Apply to all level 1 headings */
+h1 {
+    font-family: 'Slabby', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    color: #ffffff; /* Set font color to white */
+}
+
+/* Apply to all level 2 headings */
+h2 {
+    font-family: 'Slabby', sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    color: #ffffff; /* Set font color to white */
+}
+
+/* Apply to all level 3 headings */
+h3 {
+    font-family: 'Slabby', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #ffffff; /* Set font color to white */
+}
+
+/* Apply to all paragraphs */
+p {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 14px;
+    color: #ffffff; /* Set font color to white */
+    word-wrap: break-word;
+}
+
+/* Post Link Tweaks */
+.blog-post a {
+    color: #ffffff
+    text-decoration: none; /* Remove underline */
+}
+
+/* CSS for visited links (optional) */
+.blog-post a:visited {
+    color: #ffffff
+}
+
+
+/* Cat Assets */
+
+.kaykay1 {
+    position: absolute;
+    left: -5%;
+    bottom: -80%;
+    height: 530px;
+    /* Add more styling properties as needed */
+}
+
+
+
+/* Miscellaneous */
+
+.hyperlink {
+    color: #ffffff; /* Set the text color of the hyperlink */
+    text-decoration: underline; /* Underline the hyperlink text */
+}
+
+.hyperlink:hover {
+    color: #ffffff; /* Change the color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+
+welcome {
+    font-size: 80px;
+    font-family: 'Slabby', sans-serif;    
+    color: #ffffff; /* Set font color to white */
+    font-weight: normal;
+}
+
+.welcome-sign-desc {
+    font-size: 40px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: bold;
+}
+
+.big-welcome-sign {
+    text-align: center; /* Center text horizontally */
+    }
+
+
+.slab {
+    font-family: 'Slabby', sans-serif;    
+    color: #ffffff;
+}

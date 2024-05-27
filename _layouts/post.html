@@ -1,0 +1,44 @@
+<!-- _layouts/post.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/siteicon.ico">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/blog-post.css' | relative_url }}">
+</head>
+<body>
+<header>
+        <img src="/assets/sitelogo.png" alt="kaykay19" id="logo" draggable="false" height="80px">
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/aliases.html">Aliases</a>
+    </nav>
+</header>
+<main>
+        {% if page.banner %}
+        <div class="banner-image">
+            <img src="{{ page.banner | relative_url }}" alt="{{ page.title }}">
+        </div>
+        {% endif %}
+        <div class="blog-content">
+            <div class="post-header">
+                <div class="post-title">
+                    <h0>{{ page.title }}</h0>
+                </div>
+                <div class="post-date">
+                    {{ page.date | date: "%B %d, %Y" }}
+                </div>
+            </div>
+            {{ content }}
+        </div>
+    </main>
+<div class="footer">
+    <p>&copy; 2024 kk19</p>
+<div class="footer-pattern"></div>
+</body>
+</html>
+

@@ -1,0 +1,200 @@
+/* assets/css/404.css */
+/* General styles */
+
+
+html, body {
+    height: 100%; /* Ensure full height of the viewport */
+    margin: 0;
+    padding: 0;
+}
+
+.blackground {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: auto; /* This will center the .blackground div both horizontally and vertically */
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Ensure full height of the viewport */
+}
+
+
+body {
+    background-image: url('/assets/404bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Slabby', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #111b22;
+    color: white;
+    padding: 20px;
+    font-family: 'Slabby', sans-serif;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+url a:hover {
+    text-decoration: underline;
+}
+
+/* Wave pattern */
+header::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 40px; /* Adjust height as needed */
+    background: url('/assets/wavepattern.png') repeat-x; /* Ensure the correct path to your image */
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+}
+
+
+/* Section styling */
+section {
+    margin-bottom: 40px;
+}
+
+#logo {
+    height: 80px;
+    width: auto;
+}
+
+
+
+.footer {
+    position: relative;
+    background-color: #111b22; /* Background color for the footer */
+    color: #ffffff; /* Text color for the footer */
+    padding: 20px; /* Padding around the content inside the footer */
+    text-align: center; /* Aligning text to the center */
+    max-width: 1309px; /* Setting a maximum width for the footer */
+    width: 100%; /* Making it span the entire width of the parent container */
+    margin: 0; /* Centering the footer horizontally */
+    margin-top: 10%;
+}
+
+.footer-pattern {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/wavepattern.png') repeat-x;
+    pointer-events: none; /* Ensure the image doesn't interfere with footer content */
+    opacity: 1; /* Adjust the opacity as needed */
+    transform: rotate(180deg);
+}
+
+.content:last-child {
+    margin-bottom: 0; /* Prevent margin collapsing with the footer */
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Slabby';
+    src: url('/fonts/Slabby.woff2') format('woff2'),
+    font-weight: normal;
+    font-style: normal;
+    font-family: sans-serif;
+}
+
+
+.atkinson-hyperlegible-regular {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-regular-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.atkinson-hyperlegible-bold-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* Specify */
+
+/* Apply to the body element */
+body {
+    color: #ffffff; /* Set default font color */
+}
+
+/* Apply to all level BEEG headings */
+h0 {
+    font-family: 'Slabby', sans-serif;
+    font-weight: normal;
+    font-size: 66px;
+}
+
+/* Apply to all level 1 headings */
+h1 {
+    font-weight: normal;
+    font-size: 36px;
+    color: #ffffff; /* Set font color to white */
+}
+
+/* Apply to all level 2 headings */
+h2 {
+    font-weight: normal;
+    font-size: 26px;
+    color: #ffffff; /* Set font color to white */
+}
+
+/* Apply to all level 3 headings */
+h3 {
+    font-weight: normal;
+    font-size: 16px;
+    color: #ffffff; /* Set font color to white */
+}
+
+/* Apply to all paragraphs */
+p {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 16px;
+    color: #ffffff; /* Set font color to white */
+    word-wrap: break-word;
+}

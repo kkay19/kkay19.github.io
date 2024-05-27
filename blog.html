@@ -1,0 +1,121 @@
+---
+layout: kkblog
+title: Blog
+---
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        .blackground {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto 0;
+            box-sizing: border-box; /* Ensure padding is included in the total width and height */
+        }
+        .blog-post ul {
+            list-style: none;
+            padding: 0;
+        }
+        .blog-post li {
+            margin-bottom: 20px;
+        }
+        .post-title h1, .post-title h2, .post-title h3, .post-title h4, .post-title h5, .post-title h6 {
+            margin: 0;
+            font-size: 1.5em;
+            word-wrap: break-word; /* Ensure long words break to the next line */
+        }
+        .post-date {
+            font-size: 0.9em;
+            color: #ccc;
+        }
+        .line {
+            height: 2px;
+            background: #ffffff;
+            margin: 10px 0;
+        }
+        .blog-post p {
+            word-wrap: break-word; /* Ensure text wraps within the container */
+        }
+
+
+        .post-title a {
+            color: #fff; /* Link color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .post-title a:hover {
+            color: #8fbbf3; /* Change this to your desired hover color */
+            text-decoration: none; /* Optional: add underline on hover */
+        }
+
+
+        .see-att a {
+            color: #fff; /* Link color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-family: "Atkinson Hyperlegible", sans-serif;
+        }
+        .see-att a:hover {
+            color: #8fbbf3; /* Change this to your desired hover color */
+            text-decoration: none; /* Optional: add underline on hover */
+            font-family: "Atkinson Hyperlegible", sans-serif;
+        }
+
+
+.post-date {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 800;
+  color: #fff;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.preview-content {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  color: #fff;
+  font-style: normal;
+  font-size: 16px;
+}
+
+</style>
+
+<div class="blackground">
+    <h1>Blog</h1>
+    <div class="blog-post">
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <div class="post-header">
+                    <div class="post-title">
+                        <h0><a href="{{ post.url }}">{{ post.title }}</a></h0>
+                    </div>
+                    <div class="post-date">
+                        {{ post.date | date: "%B %d, %Y" }}
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="preview-content">
+                    {% capture post_content %}
+                        {{ post.content | strip_html }}
+                    {% endcapture %}
+                    {{ post_content | truncate: 350 }}
+                    {% if post.content contains "<img" %}
+                        <br>
+                        <div class="see-att">
+                            <a href="{{ post.url }}"><strong>See attachments...</strong></a>
+                        </div>
+                        <div class="banner-image">
+                            <img src="{{ post.banner_image_url }}" alt="{{ post.title }}">
+                        </div>
+                    {% endif %}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
