@@ -34,6 +34,57 @@
 I post stuff, I guess.
 </div>
 
+
+ <a href="#" id="discord-connect">Connect with Discord</a>
+
+  <script>
+    const clientId = '1260120700581052426';
+    const redirectUri = 'https://kkay19.github.io/callback';
+
+    document.getElementById('discord-connect').addEventListener('click', function(event) {
+      event.preventDefault();
+      window.location.href = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=identify%20connections`;
+    });
+
+    // Handle OAuth2 callback
+    window.onload = function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const code = urlParams.get('code');
+
+      if (code) {
+        fetch('https://discord.com/api/oauth2/token', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: new URLSearchParams({
+            client_id: clientId,
+            client_secret: 'IjqPhrjueWM8DOfzv_1uGReUhlrKDQ85',
+            grant_type: 'authorization_code',
+            code: code,
+            redirect_uri: redirectUri,
+          }),
+        })
+        .then(response => response.json())
+        .then(data => {
+          const accessToken = data.access_token;
+          return fetch('https://discord.com/api/users/@me/connections', {
+            headers: {
+              'Authorization': `Bearer ${accessToken}`,
+            },
+          });
+        })
+        .then(response => response.json())
+        .then(connections => {
+          console.log('Discord Connections:', connections);
+          // Process connections data as needed
+        })
+        .catch(error => console.error('Error:', error));
+      }
+    };
+  </script>
+
+
 </div>
 <hr>
 <div class="home-text">
